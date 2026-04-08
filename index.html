@@ -1,41 +1,136 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+  <meta charset="UTF-8">
   <title>Le Bistro Landau</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #fff8f0;
       color: #333;
-      max-width: 600px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
-      border: 2px solid #f2c1a0;
-      border-radius: 10px;
+      line-height: 1.6;
     }
-    h1 {
-      color: #d35400;
+
+    header {
       text-align: center;
+      margin-bottom: 30px;
     }
-    p {
-      font-size: 18px;
-      line-height: 1.5;
+
+    header h1 {
+      color: #d35400;
+      font-size: 36px;
+      margin-bottom: 5px;
     }
-    .rating {
-      font-size: 20px;
+
+    header .rating {
+      font-size: 22px;
       color: #f39c12;
     }
-    .location {
+
+    .location, .hours {
       font-style: italic;
       color: #7f8c8d;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    h2 {
+      color: #d35400;
+      margin-top: 25px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .section {
+      background-color: #fff1e0;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #f2c1a0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #7f8c8d;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
   </style>
 </head>
 <body>
+
+<header>
   <h1>Le Bistro</h1>
-  <p class="rating">⭐ 4.5</p>
-  <p class="location">📍 Landau</p>
-  <p>Le Bistro ist ein charmantes Restaurant in Landau, das französische und regionale Küche in gemütlicher Atmosphäre serviert.</p>
+  <div class="rating">⭐ 4.5 / 5</div>
+  <div class="location">📍 Landau, Deutschland</div>
+</header>
+
+<div class="section">
+  <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Le Bistro Innenansicht">
+  <h2>Über Le Bistro</h2>
+  <p>Le Bistro ist ein charmantes Restaurant im Herzen von Landau. Wir bieten französische und regionale Küche in gemütlicher Atmosphäre. Unser Team legt großen Wert auf Qualität, Frische und Gastfreundschaft. Ob ein romantisches Dinner, ein Business-Lunch oder ein Familienessen – wir sorgen dafür, dass jeder Besuch unvergesslich wird.</p>
+  <p>Unser Bistro ist bekannt für seine saisonalen Spezialitäten und liebevoll angerichteten Gerichte. Gäste schätzen die entspannte Atmosphäre, die warme Einrichtung und die freundliche Bedienung.</p>
+</div>
+
+<div class="section">
+  <img src="https://images.unsplash.com/photo-1541542684-69f1a4f21e77" alt="Gerichte Le Bistro">
+  <h2>Unsere Speisen</h2>
+  <p>Wir servieren klassische französische Gerichte wie Coq au Vin, Quiche Lorraine und Crème Brûlée. Außerdem bieten wir eine Auswahl an regionalen Spezialitäten und vegetarischen Optionen. Jede Woche haben wir wechselnde Tagesgerichte, um frische und saisonale Zutaten zu nutzen.</p>
+  <p>Unser Dessertangebot umfasst hausgemachte Kuchen, Torten und Spezialitäten wie Mousse au Chocolat. Dazu reichen wir eine feine Auswahl an Weinen und Getränken.</p>
+</div>
+
+<div class="section">
+  <img src="https://images.unsplash.com/photo-1555992336-03a23b5d5d0b" alt="Außenansicht Le Bistro">
+  <h2>Öffnungszeiten & Kontakt</h2>
+  <p class="hours">Montag – Freitag: 11:30 – 22:00<br>
+  Samstag: 12:00 – 23:00<br>
+  Sonntag: 12:00 – 21:00</p>
+  <p>Telefon: +49 123 456 789<br>
+  E-Mail: info@lebistro.de</p>
+  <p>Adresse: Hauptstraße 12, 76829 Landau, Deutschland</p>
+</div>
+
+<div class="section">
+  <h2>Standort</h2>
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.104830716077!2d8.115015315754917!3d49.20235997933142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479701e3f2296cd3%3A0x1234567890abcdef!2sHauptstra%C3%9Fe%2012%2C%2076829%20Landau%2C%20Germany!5e0!3m2!1sen!2sde!4v1600000000000!5m2!1sen!2sde" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+<footer>
+  © 2026 Le Bistro Landau – Website erstellt von [Dein Name]
+</footer>
+
 </body>
 </html>
