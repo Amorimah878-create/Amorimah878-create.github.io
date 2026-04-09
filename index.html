@@ -5,7 +5,7 @@
 <title>Le Bistro Landau</title>
 <style>
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #fff8f0;
     margin: 0;
     padding: 0;
@@ -43,7 +43,6 @@
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: background 0.3s;
   }
 
   nav a:hover {
@@ -58,7 +57,6 @@
 
   h2 {
     color: #d35400;
-    margin-top: 25px;
   }
 
   .section {
@@ -79,11 +77,6 @@
 
   ul {
     font-size: 18px;
-    padding-left: 20px;
-  }
-
-  .buttons {
-    margin-top: 15px;
   }
 
   .buttons a {
@@ -94,7 +87,6 @@
     padding: 10px 20px;
     border-radius: 5px;
     margin-right: 10px;
-    transition: background 0.3s;
   }
 
   .buttons a:hover {
@@ -128,12 +120,13 @@
   }
 </style>
 </head>
+
 <body>
 
 <header>
   <h1>Le Bistro</h1>
   <div class="rating">⭐ 4.5 / 5</div>
-  <div class="location">📍 Rathauspl. 6, 76829 Landau in der Pfalz</div>
+  <div>📍 Rathauspl. 6, 76829 Landau in der Pfalz</div>
 </header>
 
 <nav>
@@ -146,51 +139,45 @@
 <div class="container">
 
   <div class="section" id="about">
-    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Le Bistro Innenansicht">
+    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80" alt="Restaurant innen">
     <h2>Über Le Bistro</h2>
-    <p>Le Bistro ist ein modernes französisches Bistro im Herzen von Landau. Seit über 15 Jahren bieten wir frische, saisonale Gerichte in einer gemütlichen und stilvollen Atmosphäre. Perfekt für romantische Dinner, Familienessen oder Business-Lunch.</p>
-    <p>Unsere Philosophie: Qualität, Gastfreundschaft und Liebe zum Detail. Gäste schätzen die entspannte Atmosphäre und den freundlichen Service.</p>
+    <p>Le Bistro ist ein modernes französisches Bistro im Herzen von Landau. Seit über 15 Jahren bieten wir frische, saisonale Gerichte in einer gemütlichen Atmosphäre.</p>
     <div class="buttons">
       <a href="tel:+49763212345">📞 Anrufen</a>
     </div>
   </div>
 
   <div class="section" id="menu">
-    <img src="https://images.unsplash.com/photo-1541542684-69f1a4f21e77" alt="Gerichte Le Bistro">
+    <img src="https://images.unsplash.com/photo-1543353071-087092ec393a?auto=format&fit=crop&w=1000&q=80" alt="Essen">
     <h2>Unsere Speisekarte</h2>
     <ul>
-      <li>Französische Klassiker: Coq au Vin, Quiche Lorraine, Bouillabaisse</li>
-      <li>Regionale Spezialitäten: Pfälzer Saumagen, Flammkuchen, saisonale Gerichte</li>
+      <li>Coq au Vin, Quiche Lorraine, Bouillabaisse</li>
+      <li>Pfälzer Saumagen, Flammkuchen</li>
       <li>Vegetarische & vegane Optionen</li>
-      <li>Hausgemachte Desserts: Crème Brûlée, Mousse au Chocolat, Kuchen & Torten</li>
-      <li>Getränke: Auswahl an Weinen, Bieren und alkoholfreien Getränken</li>
+      <li>Crème Brûlée, Mousse au Chocolat</li>
+      <li>Weine, Biere & alkoholfreie Getränke</li>
     </ul>
-    <p>Jede Woche wechselnde Tagesgerichte – immer frisch zubereitet!</p>
   </div>
 
   <div class="section" id="contact">
-    <img src="https://images.unsplash.com/photo-1555992336-03a23b5d5d0b" alt="Außenansicht Le Bistro">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" alt="Außenansicht">
     <h2>Kontakt & Öffnungszeiten</h2>
-    <p class="hours"><span class="highlight">Montag – Freitag:</span> 11:30 – 22:00<br>
-    <span class="highlight">Samstag:</span> 12:00 – 23:00<br>
-    <span class="highlight">Sonntag:</span> 12:00 – 21:00</p>
-    <div class="buttons">
-      <a href="tel:+49763212345">📞 Anrufen</a>
-    </div>
+    <p><span class="highlight">Mo–Fr:</span> 11:30–22:00<br>
+    <span class="highlight">Sa:</span> 12:00–23:00<br>
+    <span class="highlight">So:</span> 12:00–21:00</p>
   </div>
 
   <div class="section" id="location">
-    <h2>Standort & Anfahrt</h2>
-    <p>Rathauspl. 6, 76829 Landau in der Pfalz</p>
+    <h2>Standort</h2>
     <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.229817234826!2d8.11467931575494!3d49.19876057933156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479650f47c897f75%3A0x9095010e0fc96db1!2sRathauspl.+6%2C+76829+Landau+in+der+Pfalz%2C+Germany!5e0!3m2!1sen!2sde!4v1600000000001!5m2!1sen!2sde" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps?q=Rathausplatz+6+Landau&output=embed"></iframe>
     </div>
   </div>
 
 </div>
 
 <footer>
-  © 2026 Le Bistro Landau – Website erstellt von [Dein Name]
+  © 2026 Le Bistro Landau
 </footer>
 
 </body>
